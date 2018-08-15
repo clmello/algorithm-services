@@ -3,3 +3,6 @@ setup:
 
 test:
 	nosetests tests
+
+lint:
+	flake8
