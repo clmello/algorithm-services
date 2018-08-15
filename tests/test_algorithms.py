@@ -12,7 +12,7 @@ class AlgorithmsTestCase(unittest.TestCase):
 
     def test_should_return_fizz(self):
         self.assertEqual(fizz_buzz(3)[2], 'fizz')
-    
+
     def test_should_return_buzz(self):
         self.assertEqual(fizz_buzz(5)[4], 'buzz')
 
