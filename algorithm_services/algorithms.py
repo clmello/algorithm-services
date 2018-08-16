@@ -1,6 +1,5 @@
 # fizz buzz
 def fizz_buzz(size):
-
     output = []
     for number in range(1, size+1):
         if number % 3 == 0 and number % 5 == 0:
@@ -16,7 +15,6 @@ def fizz_buzz(size):
 
 # binnary search
 def binnary_search(numbers_list, number, left, right):
-
     if right >= left:
         # get middle of array
         middle = left + (right - left)/2
