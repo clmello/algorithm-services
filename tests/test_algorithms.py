@@ -6,9 +6,8 @@ from algorithm_services.algorithms import fizz_buzz
 from algorithm_services.algorithms import binnary_search
 
 
-class AlgorithmsTestCase(unittest.TestCase):
+class FizzBuzzTestCase(unittest.TestCase):
 
-    # fizz buzz tests
     def tests_should_return_one(self):
         self.assertEqual(fizz_buzz(3)[0], 1)
 
@@ -24,7 +23,9 @@ class AlgorithmsTestCase(unittest.TestCase):
     def test_should_return_number(self):
         self.assertEqual(fizz_buzz(5)[3], 4)
 
-    # binarry search tests
+
+class BinnarySearchTestCase(unittest.TestCase):
+
     def test_should_return_position_four(self):
         self.assertEqual(binnary_search([2, 9, 13, 34, 55], 55, 0, 4), 4)
 
