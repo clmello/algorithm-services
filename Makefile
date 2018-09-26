@@ -6,3 +6,6 @@ lint:
 
 test:
 	nosetests tests
+
+run:
+	python algorithm_services/server.py
