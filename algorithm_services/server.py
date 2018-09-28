@@ -7,8 +7,7 @@ from app import make_app
 def main():
     app = make_app()
     server = HTTPServer(app)
-    server.bind(8888)
-    server.start(0)
+    server.listen(8888)
     tornado.ioloop.IOLoop.current().start()
 
 

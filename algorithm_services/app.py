@@ -1,12 +1,16 @@
-import tornado.web
+from tornado.web import Application
+from tornado.web import RequestHandler
 
 
-class MainHandler(tornado.web.RequestHandler):
+class MainHandler(RequestHandler):
 
     def get(self):
-        self.write('Hello')
+        self.write('Hello World')
 
 
 def make_app():
-    return tornado.web.Application([
-        (r"/", MainHandler), ])
+    return Application(
+        handlers=[(r"/", MainHandler)],
+        debug=True,
+        autoreload=True,
+    )
