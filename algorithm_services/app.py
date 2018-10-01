@@ -8,9 +8,9 @@ class MainHandler(RequestHandler):
         self.write('Hello World')
 
 
-def make_app():
+def make_app(options):
     return Application(
         handlers=[(r"/", MainHandler)],
-        debug=True,
-        autoreload=True,
+        debug=options.debug,
+        autoreload=options.autoreload,
     )
