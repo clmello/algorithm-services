@@ -1,5 +1,4 @@
 from tornado.web import Application
-from tornado.web import RequestHandler
 
 from algorithm_services.handlers import MainHandler
 
