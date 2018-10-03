@@ -4,7 +4,7 @@ from unittest import TestCase
 from tornado.testing import AsyncHTTPTestCase
 
 from algorithm_services.app import make_app
-from algorithm_services.app import MainHandler
+from algorithm_services.handlers import MainHandler
 from algorithm_services.options import get_options
 
 

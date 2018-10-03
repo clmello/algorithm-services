@@ -1,11 +1,7 @@
 from tornado.web import Application
 from tornado.web import RequestHandler
 
-
-class MainHandler(RequestHandler):
-
-    def get(self):
-        self.write('Hello World')
+from algorithm_services.handlers import MainHandler
 
 
 def make_app(options):

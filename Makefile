@@ -5,7 +5,7 @@ lint:
 	flake8
 
 test:
-	nosetests tests
+	nosetests
 
 run:
-	python algorithm_services/server.py
+	python server.py
